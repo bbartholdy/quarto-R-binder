@@ -1,7 +1,7 @@
 # get the base image, the rocker/verse has R, RStudio and pandoc
 FROM rocker/verse:4.2.3
 
-COPY ./quarto-R-binder
+COPY . /quarto-R-binder
 
 RUN . /etc/environment \
   && sudo apt-get install -y gdebi-core \
